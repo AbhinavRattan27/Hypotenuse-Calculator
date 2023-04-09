@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+let perpendicular;
+let base;
+let newp;
+let newb;
+let plus;
+let fn;
+function haha(){
+  perpendicular = document.getElementById("input1").value;
+  base = document.getElementById("input2").value;
+  newp = perpendicular * perpendicular;
+  newb = base * base;
+  fn = Math.sqrt(newp+newb);
+  document.getElementById("display").innerHTML= fn + " cm";
+  document.getElementById("display").style.width="fit-content";
+}
+    </script>
+    <div class="bod">
+    <h1 id="display">Hypotneuse Calculator</h1>
+    <label for="input1">Type Perpedicular in cm</label>
+    <input type="number" id="input1" name="input1">
+    <label for="input2">Type Base in cm</label>
+    <input type="number" id="input2" name="input2">
+    <button type="button" id="btn" onclick="haha()">Submit</button>
+    </div>
+    <h2 class="abs">MADE BY ABHINAV</h1>
+</body>
+</html>

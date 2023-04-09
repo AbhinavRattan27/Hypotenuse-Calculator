@@ -1,0 +1,116 @@
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    background-color: rgb(62, 51, 51);
+    width:400px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 200;
+    letter-spacing: .5px;
+    padding: 6px 6px 6px 6px;
+    border-radius: 3px;
+}
+
+body{
+    background-image: url(360_F_299848927_S0EwX0P6HWGigW6qZWFIBaczKMQuq5D9.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat:repeat;
+}
+
+input{
+    width:410px;
+    height:40px;
+    border: none;
+    user-select: none;
+    font-size: 1.4em;
+    padding-left: 10px;
+    border-radius: 3.5px;
+    border: 1px solid black;
+}
+
+label{
+    margin-bottom: 7px;
+    font-size: 1.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(76, 67, 67);
+    border-radius: 3px;
+    color: white;
+    font-weight: 100;
+    opacity: .67;
+}
+
+button{
+    margin-top: 4%;
+    padding: 13px 42px 13px 42px;
+    border: 1px black solid;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+button:hover{
+    transform: translateY(-10%);
+}
+
+label:nth-of-type(2){
+    margin-top: 7px;
+}
+
+.bod{
+    box-shadow: 2px 45px 500px rgb(26, 24, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:450px;
+    margin-top: 10%;
+    padding-bottom: 20px;
+    backdrop-filter: blur(2px);
+    border: 1px solid black;
+    z-index: 1;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+    appearance: none;
+}
+
+.abs{
+   font-size: 5.5em;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 600;
+   text-align: center;
+}
+
+@media screen and (max-width:550px) {
+    input,#display{
+        width:80%;
+    }
+
+    #display{
+        height:100px;
+        max-width: 370px;
+    }
+
+    .bod{
+      width:400px;
+    }
+
+    button:hover{
+        transition:none;
+        transform: none;
+    }
+    .abs{
+        font-size: 2em;
+        text-align: center;
+    }
+}
